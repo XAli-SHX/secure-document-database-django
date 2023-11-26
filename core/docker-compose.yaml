@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    volumes:
+      - .:/apps/django/secure-document-database-django
+    ports:
+      - "8081:8081"
+    image: secure-document-database-django:latest
+    container_name: secure-document-database-django
